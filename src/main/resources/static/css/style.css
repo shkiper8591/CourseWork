@@ -67,7 +67,7 @@ img{
 	box-shadow: 0 0 6px #3D414C;
 }
 .mini_news_block{
-	background-color: 2B2E35;
+	background-color: #2B2E35;
 	padding: 10px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 3px #27bddb;
@@ -352,4 +352,15 @@ body {
       margin: 4px 2px;
       cursor: pointer;
       }
-
+.single-item {
+	width: 200px;
+	height: 300px;
+	border: 1px solid black;
+	margin: 10px;
+	float: left;
+	text-align: center;
+}
+.single-item button {
+	display: block;
+	margin: 20px auto;
+}
