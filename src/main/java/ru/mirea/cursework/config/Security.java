@@ -20,7 +20,7 @@ public class Security extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()//подключение авторизации
-                .antMatchers("/","/reg","/reviews","/login/**").permitAll() //адреса, на которые будут пускать без регистрации
+                .antMatchers("/","/reg","/cart","/reviews","/login/**").permitAll() //адреса, на которые будут пускать без регистрации TODO: УБРАТЬ КАРТУ
                 .anyRequest().authenticated() //системный шаблонный набор
                 .and()
                 .formLogin()

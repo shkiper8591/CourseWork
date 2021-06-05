@@ -1,7 +1,9 @@
-var cart= {}; //корзина
+var cart = {}; //корзина
 
 $('document').ready(function(){
     loadGoods();
+    checkCart();
+    showMiniCart();
 });
 
 function loadGoods() {
@@ -29,5 +31,22 @@ function addToCart() {
     else {
         cart[articul] = 1;
     }
-    console.log(cart);
+    localStorage.setItem('cart', JSON.stringify(cart) );
+    //console.log(cart);
+    showMiniCart();
+}
+function checkCart(){
+    //проверяю наличие корзины в localStorage;
+    if (localStorage.getItem('cart') != null) {
+        cart = JSON.parse (localStorage.getItem('cart'));
+    }
+}
+
+function showMiniCart(){
+    //показываю содержимое корзины
+    var out ='';
+    for (var i in cart){
+        out += i + ' --- '+cart[i]+'<br>';
+    }
+    $('#mini-cart').html(out);
 }

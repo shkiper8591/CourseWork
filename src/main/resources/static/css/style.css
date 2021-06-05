@@ -355,7 +355,7 @@ body {
 .single-item {
 	width: 200px;
 	height: 300px;
-	border: 1px solid black;
+	border: 1px solid white;
 	margin: 10px;
 	float: left;
 	text-align: center;
@@ -363,4 +363,24 @@ body {
 .single-item button {
 	display: block;
 	margin: 20px auto;
+}
+.my-cart {
+	 width: 1000px;
+	 height: 80px;
+	 border: 1px solid white;
+	 margin: 10px;
+	 float: left;
+	 text-align: center;
+ }
+.my-cart button {
+	display: block;
+	margin: 20px auto;
+}
+.img-cart{
+	width: 10%;
+	margin-left: 10px;
+}
+.delete  {
+	width: 15px;
+	height: 15px;
 }
