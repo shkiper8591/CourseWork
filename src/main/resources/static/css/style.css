@@ -326,6 +326,7 @@ body {
 	margin: 10px;
 	float: left;
 	text-align: center;
+	background-color: #555555;
 }
 .single-item button {
 	margin: 100px 0% 0% 30%;

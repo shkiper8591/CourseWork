@@ -12,9 +12,9 @@ function loadGoods() {
         var out = '';
         for (var key in data){
             out+='<div class="single-item">';
-            out+='<h3>'+data[key]['name']+'</h3>';
+            out+='<h3 style="color: white">'+data[key]['name']+'</h3>';
             out+='<img src="'+data[key].img+'">';
-            out+='<p>Цена: '+data[key]['cost']+'</p>';
+            out+='<p style="color: white">Цена: '+data[key]['cost']+'р</p>';
             out+='<button class="add-to-cart" data-art="'+key+'">В корзину</button>';
             out+='</div>';
         }
@@ -42,11 +42,10 @@ function checkCart(){
     }
 }
 
-function showMiniCart(){
-    //показываю содержимое корзины
+/*function showMiniCart(){
     var out ='';
     for (var i in cart){
-        out += i + ' --- '+cart[i]+'<br>';
-    }
+        out += i + ' --- '+cart[i]+'<br>'; //хрень больше для более удобного дебага, показывает на index.html айдишники товаров и колличество их в корзине
+    }                                      //просто чтоб в консоль не лазить :)
     $('#mini-cart').html(out);
-}
+} */
