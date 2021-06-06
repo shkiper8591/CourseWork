@@ -13,8 +13,8 @@ function loadGoods() {
         for (var key in data){
             out+='<div class="single-item">';
             out+='<h3>'+data[key]['name']+'</h3>';
-            out+='<p>Цена: '+data[key]['cost']+'</p>';
             out+='<img src="'+data[key].img+'">';
+            out+='<p>Цена: '+data[key]['cost']+'</p>';
             out+='<button class="add-to-cart" data-art="'+key+'">В корзину</button>';
             out+='</div>';
         }

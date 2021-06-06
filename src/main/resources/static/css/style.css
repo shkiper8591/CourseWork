@@ -361,8 +361,8 @@ body {
 	text-align: center;
 }
 .single-item button {
+	margin: 100px 0% 0% 30%;
 	display: block;
-	margin: 20px auto;
 }
 .my-cart {
 	 width: 1000px;
@@ -371,6 +371,8 @@ body {
 	 margin: 10px;
 	 float: left;
 	 text-align: center;
+	 display: flex;
+	 clear: left;
  }
 .my-cart button {
 	display: block;
@@ -383,4 +385,27 @@ body {
 .delete  {
 	width: 15px;
 	height: 15px;
+}
+.add-to-cart {
+	font-size: 10px;
+	padding: 10px 10px;
+	border-radius: 8px;
+	border: 0px;
+	background-image: -webkit-linear-gradient(45deg, #6FA178 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #6FA178 50%, transparent 50%);
+	background-position: 100%;
+	background-size: 400%;
+	-webkit-transition: background 300ms ease-in-out;
+	transition: background 300ms ease-in-out;
+}
+.add-to-cart:hover{
+	background-position: 0;
+	cursor: pointer;
+}
+.desc {
+
+}
+
+.desc {
+	font-family: Arial;
 }
