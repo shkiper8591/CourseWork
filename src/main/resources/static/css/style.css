@@ -52,40 +52,8 @@ a:hover{
 img{
 	width: 100%;/*изображение на всю ширину*/
 }
-.news_block{
-	background-color: #2B2E35;
-	padding: 10px;
-	margin-bottom: 20px;
-	border: 1px solid #3D414C;/*рамка*/
-	min-height: 97%;/*минимальная высота*/
-}
-.news_a{
-	color: black;
-	text-decoration: none;
-}
-.news_block:hover{
-	box-shadow: 0 0 6px #3D414C;
-}
-.mini_news_block{
-	background-color: #2B2E35;
-	padding: 10px;
-	margin-bottom: 20px;
-	box-shadow: 0 0 3px #27bddb;
-	min-height: 90%;
-}
-.mini_news_block:hover{
-	box-shadow: 0 0 6px #27bddb;/*изменение тени при наведении на блок*/
-}
-h2{
-	margin: 50px 0 20px 10px;
-	opacity: 0.9;
-	color: white;
-}
-h3{
-	opacity: 0.9;
-}
+
 .reviews_block{
-	background: url("../img/xboxx.jpg");/*задний фон блока*/
 	background-color: white;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -115,7 +83,7 @@ h3{
 }
 .price{
 	margin-top: 20pt;
-	color: black;
+	color: white;
 	opacity: 2;
 	font-size: 20px;
 	margin: 2px 0;
@@ -286,8 +254,7 @@ body {
 	-webkit-box-shadow:0 0 20px #555;
 	box-shadow:0 0 20px #555;
 	color:white;
-	text-shadow:0 0 20px #00cccc;
-	font-family: arial black;
+	font-family: arial white;
 	position: absolute;
 	bottom: 120px;
 	width: 100%;
@@ -408,4 +375,24 @@ body {
 
 .desc {
 	font-family: Arial;
+}
+.review_button {
+	background-color: #555555;
+	border: none;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-weight: 700;
+	opacity: 0.8;
+	margin: 2px 0;
+
+}
+.text-window  {
+	width: 400px;
+	height: 150px;
 }

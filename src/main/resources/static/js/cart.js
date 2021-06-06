@@ -10,18 +10,18 @@ $.getJSON('js/item.json', function (data) {
     function showCart() {
         var out = '';
         for (var key in cart) {
-            out+='<div class="my-cart">';
+            out += '<div class="my-cart">';
             out += '<button class="delete" data-art="'+key+'">x</button>';
-            out+='<div class="img-cart">';
+            out += '<div class="img-cart">';
             out += '<img src="'+item[key].img+'">';
-            out+='</div>';
+            out += '</div>';
             out += item[key].name;
             out += '<button class="minus" data-art="'+key+'">-</button>';
             out += cart[key];
             out += '<button class="plus" data-art="'+key+'">+</button>';
             out += cart[key]*item[key].cost;
-            out +='<br>';
-            out+='</div>';
+            out += '<br>';
+            out += '</div>';
         }
         $('#my-cart').html(out);
         $('.plus').on('click', plusItem);
