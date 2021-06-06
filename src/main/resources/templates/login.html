@@ -32,7 +32,16 @@
 			<div id="container_demo" >
 				<a class="hiddenanchor" id="tosubscribe"></a>
 				<a class="hiddenanchor" id="tologin"></a>
-				<div id="wrapper">
+
+				<div th:if = "${User}!=null" >
+					<!-- Информация от авторизованном пользователе-->
+					<div th:text = "${User.username}"></div>
+					<div th:text = "${User.mail}"></div>
+
+
+				<div><a class="logout" href="/logout">Выйти из личного кабинета</a></div></div>
+
+				<div th:if = "${User}==null" id="wrapper">
 					<div id="login">
 						<form method="post" autocomplete="on">
 							<input

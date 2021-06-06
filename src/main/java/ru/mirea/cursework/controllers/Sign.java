@@ -19,8 +19,8 @@ public class Sign {
     @PostMapping("/reg")
     public String reg(@RequestParam("usernamesignup") String Name,
                       @RequestParam("emailsignup") String Mail,
-                      @RequestParam("passwordsignup") int Password,
-                      @RequestParam("passwordsignup_confirm") int Confirm){
+                      @RequestParam("passwordsignup") String Password,
+                      @RequestParam("passwordsignup_confirm") String Confirm){
         User user = new User();
         user.setUsername(Name);
         user.setMail(Mail);
